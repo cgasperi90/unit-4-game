@@ -1,0 +1,8 @@
+#header, #random-number, #wins-loss, #user-score,
+#score-div, #rules {
+    margin: 10px;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}

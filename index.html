@@ -8,62 +8,69 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+        <script src="https://code.jquery.com/jquery.js"></script>
+
     </head>
 
     <body>
         <div class="container">
 
-        <div id="header">
-            <h1>Crystals Collector!</h1>
-        </div>
+            <div class="row" id="header">
+                <h1>Crystals Collector!</h1>
+            </div>
 
-        <div id="rules">
-            <p>
-                You will be given a random number at the start of the game.
-            </p>
-            <p>
-                There are four Crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-            </p>
-            <p>
-                You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
-            </p>
-            <p>
-                The value of each crystal is hidden from you until you click on it.
-            </p>
-            <p>
-                Each time the game starts, the game will change the values of each crystal.
-            </p>
-        </div>
+            <div class="row" id="rules">
+                <p>
+                    You will be given a random number at the start of the game.
+                </p>
+                <p>
+                    There are four Crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                </p>
+                <p>
+                    You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                </p>
+                <p>
+                    The value of each crystal is hidden from you until you click on it.
+                </p>
+                <p>
+                    Each time the game starts, the game will change the values of each crystal.
+                </p>
+            </div>
+            
+            <div class="row">
+                <div id="random-number" class="col-md-4">
+                    <h1 id="random-number-text">
+                        
+                    </h1>
+                </div>
+                <div id="wins-loss" class="col-md-2">
+                    <p id="wins-text">
+                        Wins:
+                    </p>
+                
+                    <p id="losses-text">
+                        Losses:
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <img class="gem-img" src="assets/images/red-gem.jpg" width="200px" height="200px">
+                <img class="gem-img" src="assets/images/blue-gem.png" width="200px" height="200px">
+                <img class="gem-img" src="assets/images/green-gem.png" width="200px" height="200px">
+                <img class="gem-img" src="assets/images/yellow-gem.jpeg" width="200px" height="200px">
+            </div>
 
-        <div>
-            <h1 id="random-number">
+            <div id="score-div" class="row">
+                <p>
+                    Your total Score is: <span id="score-text"></span>
+                </p>
+            </div>
 
-            </h1>
-        </div>
-            <p id="wins-text">
-                Wins:
-            </p>
-            <p id="losses-text">
-                Losses:
-            </p>
-        <div>
-            <img id="red-gem-img" src="assets/images/red-gem.jpg" width="200px" height="200px">
-            <img id="blue-gem-img" src="assets/images/blue-gem.png" width="200px" height="200px">
-            <img id="green-gem-img" src="assets/images/green-gem.png" width="200px" height="200px">
-            <img id="yellow-gem-img" src="assets/images/yellow-gem.jpeg" width="200px" height="200px">
-        </div>
+            <div id="user-score" class="row">
+                <h1 id="user-score-text">
 
-        <div>
-            <p>
-                Your total Score is:
-            </p>
-        </div>
-
-        <div>
-            <h1 id="user-score-text">
-
-            </h1>
-        </div>
+                </h1>
+            </div>
 
         </div>
     </body>
